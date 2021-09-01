@@ -320,6 +320,7 @@ code {
 
 /* ==================================================================
     BOXES
+thanks to https://github.com/Ifihan/blogue for blog-box bits
 ================================================================== */
 
 .franklin-content .colbox-blue {
@@ -333,4 +334,53 @@ code {
   margin-bottom: 5px;
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
+}
+
+section .blog-box {
+ margin:30px 0;
+}
+
+.blog-box {
+ width:100%;
+ display:flex;
+ border: 2px solid lightgrey;
+ border-radius:3px;
+  overflow: hidden;
+}
+
+.blog-image {
+ width:40% !important;
+ border-radius:10px 0 0 10px;
+ padding:0 !important;
+ border-right:3px solid olivedrab;
+}
+
+.blog-description {
+ width:70%;
+ padding:10px;
+}
+
+.blog-description button {
+ border:0;
+ background-color:#ffd1df;
+ color:grey;
+ padding:10px;
+ border-radius:5px;
+}
+
+@media screen and (max-width:500px) {
+ .blog-box {
+  width:100%;
+  display:block;
+ }
+ .blog-image {
+  width:100% !important;
+   height:200px;
+   border-radius:10px 10px 0px 0px;
+   border-right:none;
+   border-bottom:3px solid #3a9476;
+ }
+ .blog-description {
+  width:100%;
+ }
 }

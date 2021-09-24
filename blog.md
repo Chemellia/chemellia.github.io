@@ -11,11 +11,11 @@
 ~~~
 <section>
 <div class= 'blog-box' >
-  <img class='blog-image' src='/assets/julia.png' />
+  <img class='blog-image' src='/assets/posts/julia.png' />
   <div class='blog-description'>
     <h1> sample blog </h1>
     <p> test test </p>
-    <a href="/posts/julia"><button> Continue reading </button> </a>
+    <a href="/posts/test/index.html"><button> Continue reading </button> </a>
   </div>
 </div>
 

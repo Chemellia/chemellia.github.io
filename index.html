@@ -34,7 +34,25 @@
     <!-- end custom head snippets -->
   </head>
 <body class="layout--splash">
-{{ insert masthead.html }}
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Chemellia</a>
+        <ul class="visible-links">
+          <li class="masthead__menu-item"><a href="/about/" >About</a></li>
+          <li class="masthead__menu-item"><a href="/packages/" >Packages</a></li>
+          <li class="masthead__menu-item"><a href="/blog/" >Blog</a></li>
+        </ul>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
 
 <div class="initial-content">
   <div class="page__hero--overlay"
@@ -47,4 +65,34 @@
       Welcome to the website! Take a look around! (More content coming soon...🤞)
     </article>
 
-    {{ insert foot.html }}
+<!-- CONTENT ENDS HERE -->
+
+      </div> <!-- closure of main -->
+    </div>   <!-- closure of class initial--content -->
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+        <!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+          <ul class="social-icons">
+            <li><strong>Follow:</strong></li>
+            <li><a href="https://github.com/Chemellia" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          </ul>
+        </div>
+        <div class="page__footer-copyright">&copy; {{ fill author }}. Powered by <a href="https://github.com/tlienart/Franklin.jl">Franklin</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="/libs/minimal-mistakes/main.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+    {{ if hasmath }}
+        {{ insert foot_katex.html }}
+    {{ end }}
+    {{ if hascode }}
+        {{ insert foot_highlight.html }}
+    {{ end }}
+  </body>
+</html>
+

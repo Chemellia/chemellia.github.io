@@ -6,8 +6,8 @@
 
 # Chemellia Packages
 
-\toc
-
 ## ChemistryFeaturization
+While this site is under construction, learn more at the [docs](https://chemistryfeaturization.chemellia.org/dev/) for the package!
 
 ## AtomicGraphNets
+While this site is under construction, learn more at the [docs](https://atomicgraphnets.chemellia.org/dev/) for the package!

@@ -9,14 +9,14 @@
 
   <channel>
     <title>
-      <![CDATA[  {{fd2rss website_title}}  ]]>
+      <![CDATA[  Chemellia  ]]>
     </title>
-    <link> {{website_url}} </link>
+    <link> https://chemellia.github.io </link>
     <description>
-      <![CDATA[  {{fd2rss website_description}}  ]]>
+      <![CDATA[  ML for atoms in Julia  ]]>
     </description>
     <atom:link
-      href="{{fd_rss_feed_url}}"
+      href="https://chemellia.github.io/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
